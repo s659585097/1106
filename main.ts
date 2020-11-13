@@ -1,14 +1,14 @@
 serial.redirectToUSB()
 basic.forever(function () {
     serial.writeLine("" + pins.analogReadPin(AnalogPin.P1) + "---" + pins.analogReadPin(AnalogPin.P2))
-    if (pins.analogReadPin(AnalogPin.P1) > 350) {
+    if (pins.analogReadPin(AnalogPin.P1) > 300) {
         robotbit.MotorRunDual(
         robotbit.Motors.M1A,
         160,
         robotbit.Motors.M2B,
         20
         )
-    } else if (pins.analogReadPin(AnalogPin.P2) > 350) {
+    } else if (pins.analogReadPin(AnalogPin.P2) > 300) {
         robotbit.MotorRunDual(
         robotbit.Motors.M1A,
         20,
