@@ -4,7 +4,7 @@ basic.forever(function () {
     if (pins.analogReadPin(AnalogPin.P1) > 300) {
         robotbit.MotorRunDual(
         robotbit.Motors.M1A,
-        160,
+        180,
         robotbit.Motors.M2B,
         20
         )
@@ -13,7 +13,7 @@ basic.forever(function () {
         robotbit.Motors.M1A,
         20,
         robotbit.Motors.M2B,
-        160
+        180
         )
     } else if (false) {
     	
